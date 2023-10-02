@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/sass/normalize.css">
+  <link rel="stylesheet" href="./assets/sass/style.css">
+</head>
+
+<body>
+  <div class="audio-player">
+    <div class="img">
+      <img class="cover" alt="cover">
+    </div>
+    <div class="control-panel">
+      <div class="timeline">
+        <div class="timeline-progress"></div>
+      </div>
+      <div class="time">
+        <div class="time-current"></div>
+        <div class="time-length"></div>
+      </div>
+      <div class="track-info">
+        <div class="track-artist">
+        </div>
+        <div class="track-name">
+        </div>
+      </div>
+      <div class="switching-tracks">
+        <button class="play-prev"></button>
+        <button class="play"></button>
+        <button class="play-next"></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex-container">
+        <span class="footer__copyright">© 2023 <a class="footer__link" target="_blank"
+            href="https://github.com/Cordozar">cordozar</a></span>
+        <div class="footer__img">
+          <a href="https://rs.school/js/" target="_blank"><img src="./assets/svg/rss.svg" alt="rs-school"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./assets/js/index.js"></script>
+
+</html>

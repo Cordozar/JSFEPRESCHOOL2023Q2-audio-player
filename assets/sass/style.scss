@@ -1,0 +1,149 @@
+$border-for-player: 15px;
+
+a {
+  text-decoration: none;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: rgb(31, 31, 31);
+}
+
+.img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-top-left-radius: $border-for-player;
+  border-top-right-radius: $border-for-player;
+}
+.cover {
+  display: block;
+  width: 100%;
+}
+.wave {
+  animation: pulse 2s linear infinite;
+}
+.control-panel {
+  padding-bottom: 20px;
+  background-color: rgb(117, 108, 26);
+  border-bottom-right-radius: $border-for-player;
+  border-bottom-left-radius: $border-for-player;
+}
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 10px;
+  background: white;
+  box-shadow: 0 2px 10px 0 #0008;
+  cursor: pointer;
+}
+.timeline-progress {
+  width: 0;
+  height: 100%;
+  background: rgb(157, 131, 121);
+  transition: 0.25s;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.track-artist {
+  width: 20rem;
+  font-weight: 400;
+  text-align: center;
+}
+.track-name {
+  width: 20rem;
+  font-weight: 300;
+  text-align: center;
+}
+.switching-tracks {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(117, 108, 26);
+  background-image: url('../svg/play.png');
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.pause {
+  background-image: url('../svg/pause.png');
+}
+
+.play-prev {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(117, 108, 26);
+  background-image: url('../svg/backward.png');
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.play-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(117, 108, 26);
+  background-image: url('../svg/forward.png');
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__link {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  color: white;
+}
+
+.footer__img {
+  height: 45px;
+}
+
+.footer__img img {
+  height: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
